@@ -1,7 +1,7 @@
 import type { RawFloorsheetResponse, RawFloorsheetPage, RawFloorsheetTrade } from "./types.js";
 
 const BASE_URL = "https://sharehubnepal.com/live/api/v2/floorsheet";
-const PAGE_SIZE = 500;
+const PAGE_SIZE = 100;
 const CANDIDATE_PAGE_PARAMS = ["PageIndex", "pageIndex", "Page", "page", "pageNumber"];
 
 // Resolved once per process and reused - avoids re-probing on every call.
