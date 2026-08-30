@@ -1,0 +1,23 @@
+{
+  "name": "nepse-floorsheet-adapter",
+  "version": "0.1.0",
+  "description": "Minimal typed adapter for the ShareHub Nepal floorsheet API - historical + live trades, one function each. No server, no database, no built-in indicators - just clean typed data for your own algo/bot.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "test": "tsx tests/candles.test.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.2"
+  }
+}
